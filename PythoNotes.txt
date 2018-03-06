@@ -1,0 +1,49 @@
+Comments in Python
+ #
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if/else if
+ if parameter:
+   blah
+ elif parameter2:
+   blah
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+for loop
+ for val in foo:
+   val++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+run a subprocess in Python and command line arguments
+ import subprocess, sys
+ city = sys.argv[1]
+ result = subprocess.check_output("curl -s 'www.google.com' | grep 'something', shell=True)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+find all digits in a string
+ result = re.findall('\d+', result)
+ #will give you a list of digits must do for loop to get them all out
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mechanize websites
+http://toddhayton.com/2014/12/08/form-handling-with-mechanize-and-beautifulsoup/
+http://stockrt.github.io/p/emulating-a-browser-in-python-with-mechanize/
+https://media.readthedocs.org/pdf/mechanize/latest/mechanize.pdf
+https://stackoverflow.com/questions/7050087/fill-out-html-inputfields-which-are-not-located-in-a-form-with-python-mechanize
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mechanize start example:
+ br = mechanize.Browser()
+ br.set_handle_robots(False)
+ #Apparently this is cheating Lies and says we are a user
+ br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
+ br.open('https://www.alaskaair.com/')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Send an Email:
+ import smtplib
+ server = smtplib.SMTP('smtp.gmail.com', 587)
+ server.starttls()
+ server.login("YOUR EMAIL ADDRESS", "YOUR PASSWORD")
+ msg = "YOUR MESSAGE!"
+ server.sendmail("YOUR EMAIL ADDRESS", "THE EMAIL ADDRESS TO SEND TO", msg)
+ server.quit()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GOOD SITE REFERENCES
+http://toddhayton.com/2014/12/08/form-handling-with-mechanize-and-beautifulsoup/
+http://stockrt.github.io/p/emulating-a-browser-in-python-with-mechanize/
+https://media.readthedocs.org/pdf/mechanize/latest/mechanize.pdf
+https://stackoverflow.com/questions/7050087/fill-out-html-inputfields-which-are-not-located-in-a-form-with-python-mechanize

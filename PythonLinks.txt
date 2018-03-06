@@ -1,0 +1,19 @@
+Python stuff
+http://docs.python-guide.org/en/latest/scenarios/scrape/
+
+http://mattscodecave.com/posts/tutorial-parsing-html-with-lxml-requests-and-xpath-and-sqlite3-part-ii.html
+
+https://automatetheboringstuff.com/chapter11/
+
+https://stackoverflow.com/questions/452283/how-can-i-install-the-beautiful-soup-module-on-the-mac
+
+PIP
+http://peak.telecommunity.com/DevCenter/EasyInstall#installing-easy-install
+
+https://packaging.python.org/tutorials/installing-packages/
+
+https://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install
+
+http://docs.python-guide.org/en/latest/starting/installation/
+
+http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref
